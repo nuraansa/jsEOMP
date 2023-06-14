@@ -117,3 +117,19 @@ nav {
     margin: 0.5rem;
     padding: 20px;
   }
+  .edi,
+.add {
+  padding: 1rem;
+}
+.sub{
+  background-color: #f4cea9;
+  margin: 0.2rem;
+  padding: 10px;
+  border: 1px Solid black;
+}
+.sub:hover {
+  background-color: #e1bd99;
+  padding: 1.5rem;
+  transition: 0.7s ease-out;
+  border: 1px Solid black;
+}
