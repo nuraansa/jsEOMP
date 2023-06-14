@@ -73,3 +73,47 @@ nav {
     background-color: #e1bd99;
     border: 1px solid black;
   }
+  .main {
+    border: 1px Solid black;
+  }
+  .sbtn {
+    float: left;
+    padding: 20px;
+    margin: 0.5rem;
+  }
+  .sbtn:hover {
+    background-color: #e1bd99;
+    padding: 1.5rem;
+    transition: 0.7s 
+  
+  }
+  .abtn {
+    float: right;
+    margin: 0.5rem;
+    padding: 20px;
+  }
+  .abtn:hover {
+    background-color: #e1bd99;
+    padding: 1.5rem;
+    transition: 0.7s 
+  }
+  .adbtn {
+    float: right;
+    margin: 0.5rem;
+    padding: 20px;
+  }
+  .adbtn:hover {
+    background-color: #e1bd99;
+    padding: 1.5rem;
+    transition: 0.7s 
+  }
+  .vbtn:hover {
+    background-color: #e1bd99;
+    padding: 1.5rem;
+    transition: 0.7s 
+  }
+  .vbtn {
+    float: left;
+    margin: 0.5rem;
+    padding: 20px;
+  }
