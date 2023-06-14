@@ -77,9 +77,8 @@ let myProducts = [
   let Information = JSON.parse(localStorage.getItem("products"));
   console.log(Information);
   
-  // show image
   document.querySelector("#productList");
-  
+  try{
   productList.innerHTML = "";
   myProducts.forEach((prod) => {
     productList.innerHTML += `
@@ -116,7 +115,9 @@ let myProducts = [
           </div>
         </div>
         `;
-  });
-  
+  })
+}catch(e){
+  location.reload()
+}
   console.log(localStorage.getItem("products"));
   

@@ -123,20 +123,25 @@ function addItems() {
   let price = document.querySelector("#price");
   // let id = document.querySelector("#id");
   // let quantity = document.querySelector("#quant");
+if (name.value == "", desc.value == "", imageUrl.value == "", price.value == "" ){
+  alert("Add a Product")
 
+}else {
   let newObject = {
-    description: desc.value,
-    // id: id.value,
-    image: imageUrl.value,
-    name: name.value,
-    price: price.value,
-    // quantity: quantity.value,
-  };
+  description: desc.value,
+  // id: id.value,
+  image: imageUrl.value,
+  name: name.value,
+  price: price.value,
+  // quantity: quantity.value,
+};
 
-  products.push(newObject);
-  localStorage.setItem("products", JSON.stringify(products));
-  prodList.innerHTML = "";
-  displayProducts();
+products.push(newObject);
+localStorage.setItem("products", JSON.stringify(products));
+prodList.innerHTML = "";
+displayProducts();
+}
+  
 }
 
 // sort products
