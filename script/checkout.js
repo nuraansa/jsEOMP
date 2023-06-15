@@ -20,10 +20,16 @@ function addToCheckout(){
         <tr style="font-size: 20px;">
         <td><img src="${item.image}" style="width:100px"></td>
         <td>${item.name}</td>
-        <td>${item.description}</td>
         <td>${item.price}</td>
-        <td>${item.quantity}</td>
         `
+    })
+
+    let clearBtn = document.querySelector('#clear')
+
+    clearBtn.addEventListener('click', ()=>{
+        localStorage.removeItem("cartData")
+        location.reload()
+        console.log(newerCart);
     })
 
     

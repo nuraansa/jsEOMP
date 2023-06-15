@@ -94,8 +94,8 @@ let cartt = []
               <p class="price-text">R${prod.price}</p>
             </div>
             <div class="card-footer">
-             <button type="button" class="adbtn border border-black shadow">+ A D D</button>
-             <button type="button" class="vbtn border border-black shadow" data-bs-toggle="modal" data-bs-target="#exampleModal`+ prod.id +`">
+             <button type="button" class="adbtn border border-black shadow rounded-1">+ A D D</button>
+             <button type="button" class="vbtn border border-black shadow rounded-1" data-bs-toggle="modal" data-bs-target="#exampleModal`+ prod.id +`">
                V I E W
              </button>
              <div class="modal fade" id="exampleModal` + prod.id +`" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -103,7 +103,7 @@ let cartt = []
                <div class="modal-content">
                  <div class="modal-header">
                    <h1 class="modal-title fs-5" id="exampleModalLabel">${prod.name}</h1>
-                   <button type="bAdd="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                  </div>
                  <div class="modal-body">
                  <img src="${prod.image}" class="card-img-top" alt="product" loading="lazy" id="pics">
