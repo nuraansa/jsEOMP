@@ -23,10 +23,10 @@ function addToCheckout(){
         <td>${item.description}</td>
         <td>${item.price}</td>
         <td>${item.quantity}</td>
-        
         `
     })
 
+    
 // Object.keys(cart).forEach((key) => {
 //   let prodOut = document.querySelector("#checkoutProd");
 //   checkout.forEach((prod) => {

@@ -144,7 +144,6 @@ function addToCart(){
       image: img.getAttribute('src'),
       description: desc.nextElementSibling.innerText,
       quantity: `${myProducts[i].quantity++}`
-
       }
       cartt.push(newObject)
       console.log(cartt)
