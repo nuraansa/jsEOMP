@@ -1,29 +1,31 @@
-localStorage.setItem("checkoutProd", JSON.stringify([]));
+// localStorage.setItem("checkoutProd", JSON.stringify([]));
 let checkout = JSON.parse(localStorage.getItem("cart"));
+let newCart = JSON.parse(localStorage.getItem('cartData'))
+console.log(newCart)
+let newerCart = JSON.parse(localStorage.getItem('cartData'))
 
 let cart = JSON.parse(localStorage.getItem("products"));
 localStorage.setItem("cart", JSON.stringify(checkout));
 let prodOut = document.querySelector("#checkoutProd");
 
-// function addProd() {
-//   item.addEventListener("click", (event) => {});
-// }
+addToCheckout()
 
-
-
-
-// checkout.forEach((item,i)=>{
-//     console.log(checkout)
-//     console.log(prodOut)
-//     prodOut.innerHTML += `
-//     <tr style="font-size: 20px;">
-//     <td><img src="${item.image}" style="width:100px"></td>
-//     <td>${item.name}</td>
-//      <td>${item.description}</td>
-//     <td>R${item.price}</td>
-//     <td>${item.quantity}</td>
-//       `
-// })
+function addToCheckout(){
+    console.log(checkout)
+}
+    newerCart.forEach((item,i)=>{
+        console.log(checkout)
+        console.log(prodOut)
+        prodOut.innerHTML += `
+        <tr style="font-size: 20px;">
+        <td><img src="${item.image}" style="width:100px"></td>
+        <td>${item.name}</td>
+        <td>${item.description}</td>
+        <td>${item.price}</td>
+        <td>${item.quantity}</td>
+        
+        `
+    })
 
 // Object.keys(cart).forEach((key) => {
 //   let prodOut = document.querySelector("#checkoutProd");

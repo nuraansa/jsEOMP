@@ -10,11 +10,46 @@ nav {
 }
 .nav-link{
   color: #92700f;
+  font-size: 20px;
 }
 .nav-link:hover {
   background-color: #e8c39e;
   color: white;
+  
 }
+.me-2:hover{
+  background-color: #e8c39e;
+  color: white;
+  border: white;
+}
+.glow {
+  font-size: 60px;
+  color: #92700f;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b58912, 0 0 40px #92700f, 0 0 50px #92700f, 0 0 60px #92700f, 0 0 70px #92700f;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e2ac1a, 0 0 50px #e2ac1a, 0 0 60px #e2ac1a, 0 0 70px #e2ac1a, 0 0 80px #e2ac1a;
+  }
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
 .footer {
   background-color: #f4cea9;
 }
@@ -43,7 +78,7 @@ nav {
   }
   
   .about-img {
-    height: 400px;
+    height: 90%;
     width: 100%;
     /* margin: 2rem; */
   }
@@ -196,3 +231,34 @@ nav {
   .con{
     color: #92700f;
   }
+
+  @media screen and (max-width: 335px) {
+    .fcols1 {
+      display:inline-flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+      .carousel {
+        height: 10rem !important;
+      }
+      .carousel-item  {
+        height: 100% !important;
+      }
+      .carousel-item img{
+        height: 100% !important;
+      }
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 23rem;
+        font-size: 2rem;
+      }
+    }

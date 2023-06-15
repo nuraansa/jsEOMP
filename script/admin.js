@@ -23,7 +23,7 @@ function displayProducts() {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal1${prod.id}"
             >
-              E D I T
+              EDIT
             </button></a
           >
         </div>
@@ -97,7 +97,7 @@ function displayProducts() {
         </div>
        </td>
        
-       <td><button class='btn btn-danger' id="close-btn">DELETE</button></td>
+       <td><button class='btn btn-danger' id="close-btn">X</button></td>
        </tr>
        `;
   });
@@ -173,10 +173,10 @@ function deleteButtons() {
       let row = event.target.parentElement;
       let i=toDelete.indexOf(event.target)
       row.remove();
-      console.log(products);
+      // console.log(products);
       products.splice(i,1);
       localStorage.setItem("products", JSON.stringify(products))
-      console.log(products);
+      // console.log(products);
       displayProducts()
     });
   });
