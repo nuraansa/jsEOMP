@@ -86,7 +86,7 @@ let cartt = []
   information.forEach((prod) => {
     productList.innerHTML += `
         <div class="col">
-          <div class="card h-100 border border-black shadow">
+          <div class="card h-100 border border-black shadow-lg">
             <img src="${prod.image}" class="card-img-top" alt="product" loading="lazy" id="pics">
             <div class="card-body">
               <h5 class="card-title">${prod.name}</h5>
