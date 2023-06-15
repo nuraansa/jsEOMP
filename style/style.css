@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: 'Nanum Myeongjo', serif;
 }
+html,
+body{
+  overflow-x: hidden;
+}
 nav {
   background-color: #f4cea9;
 }
@@ -15,9 +19,13 @@ nav {
 .nav-link:hover {
   background-color: #e8c39e;
   color: white;
-  
 }
-.me-2:hover{
+.sea{
+  background-color: #f4cea9;
+  color: #92700f;
+  border: 1px solid #92700f;
+}
+.sea:hover{
   background-color: #e8c39e;
   color: white;
   border: white;
@@ -98,7 +106,6 @@ nav {
     background-color: #e1bd99;
     border: 1.5px solid black;
     padding: 1rem;
-    scroll-padding-left:;
     transition: 0.7s 
   }
   .view {
@@ -107,6 +114,10 @@ nav {
   .view:hover {
     background-color: #e1bd99;
     border: 1px solid black;
+  }
+  .cl:hover{
+    background-color: #e1bd99;
+    color: white;
   }
   .main {
     border: 1px Solid black;
@@ -231,6 +242,21 @@ nav {
   .con{
     color: #92700f;
   }
+  
+  @media screen and (max-width: 662px){
+    .admi {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        width: 30rem;
+        margin-left: 1rem
+    }
+
+  }
+
 
   @media screen and (max-width: 335px) {
     .fcols1 {
