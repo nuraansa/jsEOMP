@@ -46,6 +46,10 @@ nav {
     text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e2ac1a, 0 0 50px #e2ac1a, 0 0 60px #e2ac1a, 0 0 70px #e2ac1a, 0 0 80px #e2ac1a;
   }
 }
+.bg{
+  background-image: url(https://i.postimg.cc/QtqKB98r/ljc2.png);
+  background-size: cover;
+}
 .overlay {
   position: absolute;
   width: 100%;
@@ -145,23 +149,23 @@ nav {
   }
   .adbtn {
     float: right;
-    margin: 0.5rem;
-    padding: 20px;
+    /* margin: 0.5rem; */
+    padding: 10px;
   }
   .adbtn:hover {
     background-color: #e1bd99;
-    padding: 1.5rem;
+    padding: 1rem;
     transition: 0.7s 
   }
   .vbtn:hover {
     background-color: #e1bd99;
-    padding: 1.5rem;
-    transition: 0.7s 
+    padding: 1rem;
+    transition: 0.7s;
   }
   .vbtn {
     float: left;
-    margin: 0.5rem;
-    padding: 20px;
+    /* margin: 0.5rem; */
+    padding: 10px;
   }
   .edi,
 .add {
